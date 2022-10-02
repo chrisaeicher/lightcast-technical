@@ -34,9 +34,11 @@ export default function PageContent({pageHeading="Occupation Overview" }) {
             <>
             <h1 className="text-3xl font-medium">{pageHeading}</h1>
             <h2 className="mb-5">{occupationData.occupation.title} in {occupationData.region.title}</h2>
+            <div className="flex flex-col gap-6">
             <OccupationSummary summaryObj={occupationData.summary} jobTitle={occupationData.occupation.title} />
-            <TrendChart />
+            <TrendChart trendComparisonData={occupationData.trend_comparison} />
             <IndustryBreakdown />
+            </div>
             </>
         } 
         {failedToLoad &&
