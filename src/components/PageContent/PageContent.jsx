@@ -37,7 +37,7 @@ export default function PageContent({pageHeading="Occupation Overview" }) {
             <div className="flex flex-col gap-12">
             <OccupationSummary summaryObj={occupationData.summary} jobTitle={occupationData.occupation.title} />
             <TrendChart trendComparisonData={occupationData.trend_comparison} />
-            <IndustryBreakdown jobTitle={occupationData.occupation.title} />
+            <IndustryBreakdown jobTitle={occupationData.occupation.title} employingIndustries={occupationData.employing_industries} />
             </div>
             </>
         } 

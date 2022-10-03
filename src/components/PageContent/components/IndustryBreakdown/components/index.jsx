@@ -1,0 +1,1 @@
+export {default as IndustryTableRow} from "./IndustryTableRow/IndustryTableRow";

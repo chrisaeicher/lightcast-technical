@@ -1,0 +1,11 @@
+.IndustryBreakdown tr td:first-of-type {
+    text-align: left;
+}
+
+.IndustryBreakdown td, .IndustryBreakdown th {
+    padding: 0.5rem;
+}
+
+.IndustryBreakdown th:first-child {
+    width: 60%;
+}
