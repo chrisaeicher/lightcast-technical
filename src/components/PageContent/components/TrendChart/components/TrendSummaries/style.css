@@ -1,0 +1,8 @@
+.TrendSummaries tr td:first-of-type {
+    text-align: left;
+}
+
+.TrendSummaries td, .TrendSummaries th {
+    padding: 0.5rem;
+}
+

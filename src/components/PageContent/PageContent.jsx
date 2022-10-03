@@ -34,16 +34,16 @@ export default function PageContent({pageHeading="Occupation Overview" }) {
             <>
             <h1 className="text-3xl font-medium">{pageHeading}</h1>
             <h2 className="mb-5">{occupationData.occupation.title} in {occupationData.region.title}</h2>
-            <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-12">
             <OccupationSummary summaryObj={occupationData.summary} jobTitle={occupationData.occupation.title} />
             <TrendChart trendComparisonData={occupationData.trend_comparison} />
-            <IndustryBreakdown />
+            <IndustryBreakdown jobTitle={occupationData.occupation.title} />
             </div>
             </>
         } 
         {failedToLoad &&
         <div className="flex flex-col items-center">
-            <h1 className="text-3xl mx-autotext-center-font-semibold">I'm sorry, we weren't able to retrieve the requested information.</h1>
+            <h1 className="text-3xl mx-auto text-center-font-semibold">I'm sorry, we weren't able to retrieve the requested information.</h1>
             <div className="flex gap-4">
             <button className="mt-5 px-4 py-2 bg-gray-700 hover:bg-green-600 transition text-white rounded" onClick={loadSampleData}>Load sample data</button>
             <button className="mt-5 px-4 py-2 transition text-gray-700 rounded hover:bg-green-100" onClick={() => window.location = "/"}>Refresh the page</button>

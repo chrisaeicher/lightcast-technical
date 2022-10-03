@@ -52,7 +52,7 @@ export default function OccupationSummary({summaryObj, jobTitle}) {
     
     return (
         <div>
-            <h3 className="font-medium">Occupation Summary for {jobTitle}</h3>
+            <h3 className="text-lg font-medium">Occupation Summary for {jobTitle}</h3>
             <div className="grid grid-rows-3 divide-y sm:grid-rows-1 sm:grid-cols-3 sm:divide-x border-gray-300 border-t-2 border-b-2">
                 <TotalJobsCard regionalJobs={regionalJobs} natAvgComparison={natAvgComparison} year={year} />
                 <PercentChangeCard startYear={startYear} endYear={endYear} regional={regionalGrowth} nationalGrowth={nationalGrowth} />
