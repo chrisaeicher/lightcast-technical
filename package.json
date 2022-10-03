@@ -1,15 +1,19 @@
 {
   "name": "lightcast-technical",
+  "homepage": "https://chrisaeicher.github.io/lightcast-technical/",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
     "chart.js": "^3.9.1",
+    "gh-pages": "^4.0.0",
     "node": "^14.18.0",
     "react": "^18.2.0",
     "react-chartjs-2": "^4.3.1",
